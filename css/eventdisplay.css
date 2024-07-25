@@ -1,0 +1,50 @@
+.carditem {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+  }
+  .carditem img {
+    transition: transform 0.5s;
+  }
+  .carditem img:hover {
+    transform: scale(1.1);
+  }
+  .carddetails {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #443157);
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    overflow: hidden;
+    transition: height 0.7s;
+  }
+  .carditem:hover .carddetails {
+    height: 98%;
+  }
+  .containerdiv {
+    width: 100%;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: #443157; */
+  }
+  .titleheading {
+    width: 320px;
+    color: #fff;
+    border-radius: 30px;
+  }
+  .completecard {
+    width: 350px;
+  }
+  

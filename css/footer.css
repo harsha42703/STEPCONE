@@ -1,0 +1,143 @@
+
+  .footer-content{
+    color: white;
+    width: 100%;
+    height: 310px;
+    background-color:rgb(13, 13, 17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    padding: 25px;
+    padding-bottom: 30px;
+    
+    overflow-x: hidden;
+    font-family:  'Supreme', sans-serif;
+    
+    
+  }
+  .section{
+    width: 300px;
+    height: 210px;
+    margin: 10px;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .map{
+    width: 300px;
+    height: 140px;
+    margin: 8px 0px;
+  }
+  .contact-links{
+    width: 300px;
+    height: 30px;
+  }
+  .links{
+    list-style: none;
+  }
+  .links li{
+    margin: 8px 0px;
+  }
+  /* .sec1 h3{
+    margin-left: 40px;
+  }
+  .sec2 h3{
+    margin-left: 40px;
+  }
+  .sec3 h3{
+    margin-left: 40px;
+  } */
+  .contact-links i{
+    color: white;
+    margin: 0px 15px;
+    font-size: 25px;
+    cursor: pointer;
+    color:  white !important;
+  }
+  .sec1 i{
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+  
+  }
+  .links li a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  .map{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-links .icons
+  {
+    margin-left: 15px;
+  }
+ 
+  .step-counter{
+    display: flex;
+    column-gap: 5px;
+  }
+
+  .step-counter p{
+    border: solid 1px white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+
+
+  @media only screen and (max-width: 480px) {
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    .footer-content{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+    .section{
+      width: 100%;
+      height: 180px;
+      display: flex;
+      flex-direction: column;
+    }
+    .sec3{
+      margin-bottom: 20px;
+    }
+    .sec1{
+      height: 50px;
+    }
+    .sec1 i{
+      font-size: 10px;
+      display: flex;
+      justify-content: center;
+      }
+      .contact-links i{
+        margin: 0px 18px;
+      }
+      .contact-links .icons{
+        margin-left: 30px;
+      }
+      .iframe{
+        height: 100%;
+        width: 100%;
+      }
+
+      .step-counter,#couname{
+        display: none;
+
+      }
+  }

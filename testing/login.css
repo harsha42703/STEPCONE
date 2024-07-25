@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #443157;
+    border-radius: 18px;
+}
+.wrapper .image img{
+    width: 350px;
+}
+.wrapper form{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #443157;
+    background-color: #443157;
+    color: #f4F1DE;
+    opacity: 0.9;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.wrapper form img{
+    display: none;
+}
+.h1{
+    font-size: 2rem;
+}
+.input-box{
+    margin: 15px 0px;
+}
+.input-box .input-contain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+.input-box .input-contain input{
+    width: 250px;
+    height: 30px;
+    padding: 17px 5px 17px 30px;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    background-color: #443157;
+    color: #f4F1DE;
+}
+
+.input-box .input-contain .bx{
+    font-size: 1.4rem;
+    color: #f4F1DE;
+    position: absolute;
+    left: 0;
+    margin-left: 3px;
+}
+.input-box .input-contain .fa-eye{
+    font-size: 1.4rem;
+    color: #f4F1DE;
+    position: absolute;
+    right: 0;
+    font-size: 1.1rem;
+}
+.input-box .input-contain input:focus{
+    border-bottom: 2px solid #f4F1DE;
+}
+.forgot-pass a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #f4F1DE;
+}
+.custom-button{
+    background-color: #f4F1DE;
+    width: 150px;
+    color: #443157;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #f4F1DE;
+    margin: 10px;
+    font-size: 1.2rem;
+    border-radius: 6px;
+}
+h1{
+    color: #f4F1DE;
+}
+
+@media screen and (max-width :400px){
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+    .wrapper .image{
+        display: none;
+    }
+    .wrapper form{
+        border-radius: 8px;
+        background-color: #f4F1DE;
+        color: #443157;
+        border: 2px solid #f4F1DE;
+    }
+    .wrapper form img{
+        display: block;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin: 5px;
+    }
+    .border{
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .input-box .input-contain .bx{
+        color: #443157;
+    }
+    .input-box .input-contain .fa-eye{
+        color: #443157;
+    }
+    .input-box .input-contain input{
+        background-color: #f4F1DE;
+        color: #443157;
+    }
+    h1{
+        color: #443157;
+    }
+    .input-box .input-contain input:focus{
+        border-bottom: 2px solid #443157;
+    }
+    .forgot-pass a{
+        color: #443157;
+    }
+    .custom-button{
+        background-color: #443157;
+        width: 150px;
+        color: #f4F1DE;
+        border: 2px solid #443157;
+        cursor: pointer;
+    }
+
+}

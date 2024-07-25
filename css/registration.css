@@ -1,0 +1,103 @@
+
+
+.header1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #443157;
+  padding: 20px 0px;
+  color: #f4f1de;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0px;
+}
+.buttons .btn{
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-size: 1.2rem;
+}
+
+.custom-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Default styles for the table */
+
+.scrollable-table{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table {
+  /* text-align: center; */
+  margin: 15px ;
+    width: 98%;
+    border-collapse: collapse;
+    border: 2px solid #f2f2f2;
+  }
+  tbody tr td{
+    border: 2px solid #f4f1de
+  }
+  .table thead tr th{
+    background-color: #443157;
+    color: white;
+    border: 1px solid #f4f1de;
+  }
+  th, td {
+    border: 2px solid #f4f1de;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+
+  .scrollable-table {
+    overflow-x: auto;
+  }
+  
+  @media only screen and (max-width: 400px) {
+    body{
+      overflow-x: scroll;
+    }
+    .buttons{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      column-gap: 10px;
+    }
+    .buttons a{
+      margin: 10px 0px;
+      padding: 10px;
+      width: 200px;
+    }
+    .table {
+      text-align: center;
+      /* margin: 15px ; */
+        width: 80%;
+        border-collapse: collapse;
+        border: 2px solid #f2f2f2;
+      }
+      .scrollable-table{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-x: scroll;
+        display: block;
+      }
+      th, td {
+        border: 2px solid #f4f1de;
+        padding: 2px;
+        text-align: left;
+        font-size: .90rem;
+      }
+  }
+  
